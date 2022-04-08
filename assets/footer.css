@@ -36,6 +36,29 @@
     padding:5px;
     font-weight:600;
 }
+.menu-item a {
+    color:#16143b;
+    position: relative;
+    text-decoration: none;
+    
+}
+.menu-item a:hover::before {
+    transform: scaleX(1);
+
+  }
+.menu-item a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transform: scaleX(0);
+    transform-origin: top left;
+    transition: transform 0.3s ease;
+  }
 .flex-right > p {
 	margin-bottom: 80px;
 }
